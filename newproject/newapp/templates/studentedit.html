@@ -1,0 +1,36 @@
+{% extends "index.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block stdedit %}
+
+    <h1 class="text-center">STUDENT EDIT</h1>
+    <div class="container bg-secondary d-flex justify-content-center align-items-center bg-secondary" style="width: 500px;padding: 30px;border-radius: 20px" >
+    <form action="/studentupdate/{{sedit.id}}" method="post">
+        {% csrf_token %}
+        <label for="">FIRST NAME </label>
+        <input type="text" name="FIRSTNAME"  value="{{sedit.student_id.first_name}}" style="margin-left: 10px;width: 200px;padding: 5px 10px 5px 10px;border-radius: 5px;"><br><br>
+        <label for="">LAST NAME </label>
+        <input type="text" name="LASTNAME" value="{{sedit.student_id.last_name}}" style="margin-left: 12px;width: 200px;padding: 5px 10px 5px 10px;border-radius: 5px;"><br><br>
+        <label for="">EMAIL </label>
+        <input type="email" name="EMAIL" value="{{sedit.student_id.email}}" style="margin-left: 53px;width: 200px;padding: 5px 10px 5px 10px;border-radius: 5px;"><br><br>
+        <label for="">ADDRESS </label>
+        <input type="text" name="ADDRESS" value="{{sedit.address}}" style="margin-left: 30px;width: 200px;padding: 5px 10px 5px 10px;border-radius: 5px;"><br><br>
+        <label for=""> PH NUMBER </label>
+        <input type="number" name="PHONE_NUMBER" value="{{sedit.phone_number}}" style="margin-left: 10px;width: 200px;padding: 5px 10px 5px 10px;border-radius: 5px;"><br><br>
+        <label for="">GUARDIAN </label>
+        <input type="text" name="GUARDIAN" value="{{sedit.guardian}}" style=" margin-left: 22px;width: 200px;padding: 5px 10px 5px 10px;border-radius: 5px;"><br><br>
+        <input type="submit" value="update" class="btn bg-primary"   style="margin-left: 160px;padding: 15px;border-radius: 10px;">
+    </form>
+    </div>
+   {% endblock stdedit %}
+
+</body>
+</html>

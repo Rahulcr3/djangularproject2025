@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  
+    {% block contimg %}
+    <div class="col-lg-6">
+        <div class="hero-image">
+          <img src="{%static 'assets/img/profile/profile-1.webp'%} " alt="Portfolio Hero Image" class="img-fluid" data-aos="zoom-out" data-aos-delay="300">
+          <div class="shape-1"></div>
+          <div class="shape-2"></div>
+        </div>
+      </div>
+      {% endblock contimg %}
+      
+
+</body>
+</html> 

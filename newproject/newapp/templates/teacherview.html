@@ -1,0 +1,46 @@
+{% extends "index.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block contview %}
+
+    <h1 class="text-center">TEACHER VIEW</h1>
+    <div class="container d-flex align-items-center justify-content-center" >
+        <table class="table table-boadered table-striped table-center" style="height: 450px;width: 450px;" >
+            <thead class="table-dark">
+                <tr>
+                <th>FIRSTNAME</th>
+                <th>LASTNAME</th>
+                <th>EMAIL</th>
+                <th>ADDRESS</th> 
+                <th>PHONE NUMBER</th> 
+                <th>SALARY</th>
+                <th>EXPERIENCE</th>
+            </tr>
+            </thead>
+            {% for i in tview %}
+            <tbody>
+                <tr>
+                    <td>{{i.teacher_id.first_name}}</td>
+                    <td>{{i.teacher_id.last_name}}</td>
+                    <td>{{i.teacher_id.email}}</td>
+                    <td>{{i.address}}</td>
+                    <td>{{i.phone_no}}</td>
+                    <td>{{i.salary}}</td>
+                    <td>{{i.experience}}</td>
+                </tr>
+            </tbody>
+            {% endfor %}
+        </table>
+    </div>
+    {% endblock contview %}
+
+</body>
+</html>

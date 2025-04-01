@@ -1,0 +1,49 @@
+{% extends "index.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block tedit %}
+
+    <h1 class="text-center">TEACHER EDIT</h1>
+    <div class="container bg-secondary d-flex justify-content-center align-items-center bg-secondary" style="width: 500px;padding: 30px;border-radius: 20px" >
+    <form action="/teacherupdate/{{tedit.id}}" method="post">
+        {% csrf_token %}
+        <label for="">USER NAME </label>
+        <input type="text" name="USERNAME"style=" margin-left: 12px; width: 200px;padding: 5px 10px 5px 10px;border-radius: 5px;"><br><br>
+        <label for="">PASSWORD </label>
+        <input type="password" name="PASSWORD" style="margin-left: 16px; width: 200px;padding: 5px 10px 5px 10px;border-radius: 5px;"><br><br>
+        <label for="">FIRST NAME </label>
+        <input type="text" name="FIRSTNAME"  value="{{tedit.teacher_id.first_name}}" style="margin-left: 10px;width: 200px;padding: 5px 10px 5px 10px;border-radius: 5px;"><br><br>
+        <label for="">LAST NAME </label>
+        <input type="text" name="LASTNAME" value="{{tedit.teacher_id.last_name}}" style="margin-left: 12px;width: 200px;padding: 5px 10px 5px 10px;border-radius: 5px;"><br><br>
+        <label for="">EMAIL </label>
+        <input type="email" name="EMAIL" value="{{tedit.teacher_id.email}}" style="margin-left: 53px;width: 200px;padding: 5px 10px 5px 10px;border-radius: 5px;"><br><br>
+        <label for="">ADDRESS </label>
+        <input type="text" name="ADDRESS" value="{{tedit.address}}" style="margin-left: 30px;width: 200px;padding: 5px 10px 5px 10px;border-radius: 5px;"><br><br>
+        <label for=""> PH NUMBER </label>
+        <input type="number" name="PHONE_NUMBER"  value="{{tedit.phone_no}}" style="margin-left: 10px;width: 200px;padding: 5px 10px 5px 10px;border-radius: 5px;"><br><br>
+        <label for="">SALARY </label>
+        <input type="number" name="SALARY" value="{{tedit.salary}}" style="margin-left: 40px;width: 200px;padding: 5px 10px 5px 10px;border-radius: 5px;"><br><br>
+        <label for="">EXPERIENCE </label>
+        <input type="number" name="EXPERIENCE" value="{{tedit.experience}}" style="margin-left: 6px;width: 200px;padding: 5px 10px 5px 10px;border-radius: 5px;"><br><br>
+        <input type="submit" value="update" class="btn bg-primary"   style="margin-left: 120px;padding: 15px;border-radius: 10px;">
+
+        <!-- <input type="text" name="FIRSTNAME" id="" placeholder="first_name" ><br><br>
+        <input type="text" name="LASTNAME" id="" placeholder="last_name" ><br><br>
+        <input type="email" name="EMAIL" id="" placeholder="email" > <br><br>
+        <input type="text" name="ADDRESS" id="" placeholder="address " > <br><br>
+        <input type="number" name="PHONE_NUMBER" id="" placeholder="phone_no"><br><br>
+        <input type="number" name="SALARY" id="" placeholder="salary" ><br><br>
+        <input type="number" name="EXPERIENCE" id="" placeholder="experience" ><br><br>
+        <input type="submit" value="update"> -->
+   </form>
+   {% endblock tedit %}
+</body>
+</html>

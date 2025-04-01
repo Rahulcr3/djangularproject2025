@@ -1,0 +1,41 @@
+{% extends "index.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block contdata %}
+
+    <h1 class="text-center">STUDENT PROFILE</h1>
+    <div class="container d-flex align-items-center justify-content-center" >
+        <table class="table table-boadered table-striped table-center" style="height: 100px;width: 450px;" >
+            <thead class="table-dark">
+                <tr>
+                    <th>FIRSTNAME</th>
+                    <th>LASTNAME</th>
+                    <th>EMAIL</th>
+                    <th>ADDRESS</th> 
+                    <th>PHONE NUMBER</th> 
+                    <th>GUARDIAN</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{data.student_id.first_name}}</td>
+                    <td>{{data.student_id.last_name}}</td>
+                    <td>{{data.student_id.email}}</td>
+                    <td>{{data.address}}</td>
+                    <td>{{data.phone_number}}</td>
+                    <td>{{data.guardian}}</td>
+                </tr>
+            </tbody>
+        </table>
+        {% endblock contdata %}
+
+</body>
+</html>

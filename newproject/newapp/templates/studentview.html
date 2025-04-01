@@ -1,0 +1,49 @@
+{% extends "index.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    {% block sview %}
+
+    <h1 class="text-center">STUDENT VIEW</h1>
+    <div class="container d-flex align-items-center justify-content-center" >
+    <table class="table table-boadered table-striped table-center" style="height: 450px;width: 450px;" >
+        <thead class="table-dark">
+            <tr>
+                <th>FIRSTNAME</th>
+                <th>LASTNAME</th>
+                <th>EMAIL</th>
+                <th>ADDRESS</th> 
+                <th>PHONE NUMBER</th> 
+                <th>GUARDIAN</th>
+                <th>DELETE</th>  
+                <th>OK</th>          
+            </tr>    
+        </thead>
+        {% for i in view %}
+        <tbody>
+            <tr>
+                <td>{{i.student_id.first_name}}</td>
+                <td>{{i.student_id.last_name}}</td>
+                <td>{{i.student_id.email}}</td>
+                <td>{{i.address}}</td>
+                <td>{{i.phone_number}}</td>
+                <td>{{i.guardian}}</td>
+                <td><a href="studentdelete/{{i.id}}" class="text-danger">delete</a></td>
+                <td><a href="studentapprove/{{i.student_id.id}}" class="text-success">approve</a></td>
+            </tr>    
+        </tbody>
+        {% endfor %}
+    </table>
+</div>
+    {% endblock sview %}
+
+</body>
+</html>

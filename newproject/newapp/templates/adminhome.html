@@ -1,0 +1,22 @@
+{% extends "index.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block contadmn %}
+    {% csrf_token %}
+    <h1 class="text-center">ADMIN</h1>
+    <div class="container d-flex justify-content-center align-items-center bg-secondary " style="height: 150px;width: 600px;border-radius: 10px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> 
+        <a class="btn btn-primary" href="teacher_reg" style="padding: 20px;margin-right: 30px;margin-left: 20px;">ADD TEACHER</a><br><br>
+        <a class="btn btn-success" href="teacherview" style="padding: 20px;margin-right: 40px;">VIEW TEACHER</a><br><br>
+        <a class="btn btn-danger" href="studentview" style="padding: 20px;margin-right: 40px;">STUDENT VIEW</a>
+    </div>
+    
+    {% endblock contadmn %}
+</body>
+</html>

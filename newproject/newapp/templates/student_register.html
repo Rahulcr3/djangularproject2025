@@ -1,0 +1,38 @@
+{% extends "index.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block cont %}
+    <div class="container d-flex justify-content-center align-items-center bg-secondary" style="width: 500px;padding: 30px;border-radius: 20px">
+    <form action="" method="post" class="studentreg">
+        <h1 >STUDENT REGISTER</h1>
+        {% csrf_token %}
+        <label for="">USER NAME </label>
+        <input type="text" name="USERNAME" style=" margin-left: 12px; width: 200px;padding: 5px 10px 5px 10px;border-radius: 5px;"><br><br>
+        <label for="">PASSWORD </label>
+        <input type="password" name="PASSWORD" style="margin-left: 16px; width: 200px;padding: 5px 10px 5px 10px;border-radius: 5px;"><br><br>
+        <label for="">FIRST NAME </label>
+        <input type="text" name="FIRSTNAME" style="margin-left: 10px;width: 200px;padding: 5px 10px 5px 10px;border-radius: 5px;"><br><br>
+        <label for="">LAST NAME </label>
+        <input type="text" name="LASTNAME" style="margin-left: 12px;width: 200px;padding: 5px 10px 5px 10px;border-radius: 5px;"><br><br>
+        <label for="">EMAIL </label>
+        <input type="email" name="EMAIL" style="margin-left: 53px;width: 200px;padding: 5px 10px 5px 10px;border-radius: 5px;"><br><br>
+        <label for="">ADDRESS </label>
+        <input type="text" name="ADDRESS" style="margin-left: 30px;width: 200px;padding: 5px 10px 5px 10px;border-radius: 5px;"><br><br>
+        <label for=""> PH NUMBER </label>
+        <input type="number" name="PHONE_NUMBER" style="margin-left: 10px;width: 200px;padding: 5px 10px 5px 10px;border-radius: 5px;"><br><br>
+        <label for="">GUARDIAN </label>
+        <input type="text" name="GUARDIAN" style=" margin-left: 22px;width: 200px;padding: 5px 10px 5px 10px;border-radius: 5px;"><br><br>
+        <input type="submit" value="submit" class="btn bg-primary"   style="margin-left: 160px;padding: 15px;border-radius: 10px;">
+    </form> 
+    </div>
+    {% endblock cont %}
+
+</body>
+</html>
