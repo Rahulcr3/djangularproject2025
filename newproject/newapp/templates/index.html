@@ -1,4 +1,4 @@
-{% load static %}
+{% load  static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,23 +10,23 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="{%static 'assets/img/favicon.png '%}" rel="icon">
-  <link href="{%static 'assets/img/apple-touch-icon.png '%}" rel="apple-touch-icon">
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.g static.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="{%static 'assets/vendor/bootstrap/css/bootstrap.min.css '%}" rel="stylesheet">
-  <link href="{%static 'assets/vendor/bootstrap-icons/bootstrap-icons.css '%}" rel="stylesheet">
-  <link href="{%static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
-  <link href="{%static 'assets/vendor/glightbox/css/glightbox.min.css '%}" rel="stylesheet">
-  <link href="{%static 'assets/vendor/swiper/swiper-bundle.min.css '%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="{%static 'assets/css/main.css '%}" rel="stylesheet">
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: EasyFolio
@@ -44,7 +44,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="{%static 'assets/img/logo.webp'%}" alt=""> -->
+        <!-- <img src="{% static 'assets/img/logo.web' %}" alt=""> -->
         <h1 class="sitename">STUDENT MANAGEMENT SYSTEM</h1>
       </a>
 
@@ -171,7 +171,7 @@
         <div class="row align-items-center">
           <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
             <div class="about-image">
-              <img src="{%static 'assets/img/profile/profile-square-2.webp'%} " alt="Profile Image" class="img-fluid rounded-4">
+              <img src="{% static 'assets/img/profile/profile-square-2.web' %} " alt="Profile Image" class="img-fluid rounded-4">
             </div>
           </div>
 
@@ -233,7 +233,7 @@
 
               <div class="signature mt-4">
                 <div class="signature-image">
-                  <img src="{%static 'assets/img/misc/signature-1.webp'%} " alt="" class="img-fluid">
+                  <img src="{% static 'assets/img/misc/signature-1.web' %} " alt="" class="img-fluid">
                 </div>
                 <div class="signature-info">
                   <h4>Eliot Johnson</h4>
@@ -465,10 +465,10 @@
             <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
               <div class="portfolio-card">
                 <div class="portfolio-image">
-                  <img src="{%static 'assets/img/portfolio/portfolio-1.webp' %}" class="img-fluid" alt="" loading="lazy">
+                  <img src="{% static 'assets/img/portfolio/portfolio-1.webp' %}" class="img-fluid" alt="" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
-                      <a href="{%static 'assets/img/portfolio/portfolio-1.webp' %}" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+                      <a href="{% static 'assets/img/portfolio/portfolio-1.webp' %}" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
                       <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
                     </div>
                   </div>
@@ -485,10 +485,10 @@
             <!-- <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
               <div class="portfolio-card">
                 <div class="portfolio-image">
-                  <img src="{%static 'assets/img/portfolio/portfolio-10.webp' %}" class="img-fluid" alt="" loading="lazy">
+                  <img src="{% static 'assets/img/portfolio/portfolio-10.webp' %}" class="img-fluid" alt="" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
-                      <a href="{%static 'assets/img/portfolio/portfolio-10.webp' %}" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
+                      <a href="{% static 'assets/img/portfolio/portfolio-10.webp' %}" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
                       <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
                     </div>
                   </div>
@@ -505,10 +505,10 @@
             <!-- <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
               <div class="portfolio-card">
                 <div class="portfolio-image">
-                  <img src="{%static 'assets/img/portfolio/portfolio-7.webp'%}" class="img-fluid" alt="" loading="lazy">
+                  <img src="{% static 'assets/img/portfolio/portfolio-7.web' %}" class="img-fluid" alt="" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
-                      <a href="{%static 'assets/img/portfolio/portfolio-7.webp'%}" class="glightbox preview-link" data-gallery="portfolio-gallery-motion"><i class="bi bi-eye"></i></a>
+                      <a href="{% static 'assets/img/portfolio/portfolio-7.web' %}" class="glightbox preview-link" data-gallery="portfolio-gallery-motion"><i class="bi bi-eye"></i></a>
                       <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
                     </div>
                   </div>
@@ -525,10 +525,10 @@
             <!-- <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-brand">
               <div class="portfolio-card">
                 <div class="portfolio-image">
-                  <img src="{%static 'assets/img/portfolio/portfolio-4.webp'%}" class="img-fluid" alt="" loading="lazy">
+                  <img src="{% static 'assets/img/portfolio/portfolio-4.web' %}" class="img-fluid" alt="" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
-                      <a href="{%static 'assets/img/portfolio/portfolio-4.webp'%}" class="glightbox preview-link" data-gallery="portfolio-gallery-brand"><i class="bi bi-eye"></i></a>
+                      <a href="{% static 'assets/img/portfolio/portfolio-4.web' %}" class="glightbox preview-link" data-gallery="portfolio-gallery-brand"><i class="bi bi-eye"></i></a>
                       <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
                     </div>
                   </div>
@@ -545,10 +545,10 @@
             <!-- <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
               <div class="portfolio-card">
                 <div class="portfolio-image">
-                  <img src="{%static 'assets/img/portfolio/portfolio-2.webp'%}" class="img-fluid" alt="" loading="lazy">
+                  <img src="{% static 'assets/img/portfolio/portfolio-2.web' %}" class="img-fluid" alt="" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
-                      <a href="{%static 'assets/img/portfolio/portfolio-2.webp'%}" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+                      <a href="{% static 'assets/img/portfolio/portfolio-2.web' %}" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
                       <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
                     </div>
                   </div>
@@ -565,10 +565,10 @@
             <!-- <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
               <div class="portfolio-card">
                 <div class="portfolio-image">
-                  <img src="{%static 'assets/img/portfolio/portfolio-11.webp'%}" class="img-fluid" alt="" loading="lazy">
+                  <img src="{% static 'assets/img/portfolio/portfolio-11.web' %}" class="img-fluid" alt="" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
-                      <a href="{%static 'assets/img/portfolio/portfolio-11.webp'%}" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
+                      <a href="{% static 'assets/img/portfolio/portfolio-11.web' %}" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
                       <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
                     </div>
                   </div>
@@ -639,7 +639,7 @@
                       Beatae magnam dolore quia ipsum. Voluptatem totam et qui dolore dignissimos. Amet quia sapiente laudantium nihil illo et assumenda sit cupiditate. Nam perspiciatis perferendis minus consequatur. Enim ut eos quo.
                     </p>
                     <div class="profile d-flex align-items-center">
-                      <img src="{%static 'assets/img/person/person-m-7.webp'%}" class="profile-img" alt="">
+                      <img src="{% static 'assets/img/person/person-m-7.web' %}" class="profile-img" alt="">
                       <div class="profile-info">
                         <h3>Saul Goodman</h3>
                         <span>Client</span>
@@ -648,7 +648,7 @@
                   </div>
                   <div class="col-lg-4 d-none d-lg-block">
                     <div class="featured-img-wrapper">
-                      <img src="{%static 'assets/img/person/person-m-7.webp'%}" class="featured-img" alt="">
+                      <img src="{% static 'assets/img/person/person-m-7.web' %}" class="featured-img" alt="">
                     </div>
                   </div>
                 </div>
@@ -668,7 +668,7 @@
                       Dolorem excepturi esse qui amet maxime quibusdam aut repellendus voluptatum. Corrupti enim a repellat cumque est laborum fuga consequuntur. Dolorem nostrum deleniti quas voluptatem iure dolorum rerum. Repudiandae doloribus ut repellat harum vero aut. Modi aut velit aperiam aspernatur odit ut vitae.
                     </p>
                     <div class="profile d-flex align-items-center">
-                      <img src="{%static 'assets/img/person/person-f-8.webp'%}" class="profile-img" alt="">
+                      <img src="{% static 'assets/img/person/person-f-8.web' %}" class="profile-img" alt="">
                       <div class="profile-info">
                         <h3>Sara Wilsson</h3>
                         <span>Designer</span>
@@ -677,7 +677,7 @@
                   </div>
                   <div class="col-lg-4 d-none d-lg-block">
                     <div class="featured-img-wrapper">
-                      <img src="{%static 'assets/img/person/person-f-8.webp'%}" class="featured-img" alt="">
+                      <img src="{% static 'assets/img/person/person-f-8.web' %}" class="featured-img" alt="">
                     </div>
                   </div>
                 </div>
@@ -699,7 +699,7 @@
                       Itaque ut explicabo vero occaecati est quam rerum sed. Numquam tempora aut aut quaerat quia illum. Nobis quia autem odit ipsam numquam. Doloribus sit sint corporis eius totam fuga. Hic nostrum suscipit corrupti nam expedita adipisci aut optio.
                     </p>
                     <div class="profile d-flex align-items-center">
-                      <img src="{%static 'assets/img/person/person-m-9.webp'%}" class="profile-img" alt="">
+                      <img src="{% static 'assets/img/person/person-m-9.web' %}" class="profile-img" alt="">
                       <div class="profile-info">
                         <h3>Matt Brandon</h3>
                         <span>Freelancer</span>
@@ -708,7 +708,7 @@
                   </div>
                   <div class="col-lg-4 d-none d-lg-block">
                     <div class="featured-img-wrapper">
-                      <img src="{%static 'assets/img/person/person-m-9.webp'%}" class="featured-img" alt="">
+                      <img src="{% static 'assets/img/person/person-m-9.web' %}" class="featured-img" alt="">
                     </div>
                   </div>
                 </div>
@@ -728,7 +728,7 @@
                       Omnis aspernatur accusantium qui delectus praesentium repellendus. Facilis sint odio aspernatur voluptas commodi qui qui qui pariatur. Corrupti deleniti itaque quaerat ipsum deleniti culpa tempora tempore. Et consequatur exercitationem hic aspernatur nobis est voluptatibus architecto laborum.
                     </p>
                     <div class="profile d-flex align-items-center">
-                      <img src="{%static 'assets/img/person/person-f-10.webp'%}" class="profile-img" alt="">
+                      <img src="{% static 'assets/img/person/person-f-10.web' %}" class="profile-img" alt="">
                       <div class="profile-info">
                         <h3>Jena Karlis</h3>
                         <span>Store Owner</span>
@@ -737,7 +737,7 @@
                   </div>
                   <div class="col-lg-4 d-none d-lg-block">
                     <div class="featured-img-wrapper">
-                      <img src="{%static 'assets/img/person/person-f-10.webp'%}" class="featured-img" alt="">
+                      <img src="{% static 'assets/img/person/person-f-10.web' %}" class="featured-img" alt="">
                     </div>
                   </div>
                 </div>
@@ -1089,17 +1089,17 @@
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="{%static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js '%}"></script>
-  <script src="{%static 'assets/vendor/php-email-form/validate.js '%}"></script>
-  <script src="{%static 'assets/vendor/aos/aos.js '%}"></script>
-  <script src="{%static 'assets/vendor/waypoints/noframework.waypoints.js '%}"></script>
-  <script src="{%static 'assets/vendor/glightbox/js/glightbox.min.js '%}"></script>
-  <script src="{%static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js '%}"></script>
-  <script src="{%static 'assets/vendor/isotope-layout/isotope.pkgd.min.js '%}"></script>
-  <script src="{%static 'assets/vendor/swiper/swiper-bundle.min.js '%}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
 
   <!-- Main JS File -->
-  <script src="{%static 'assets/js/main.js '%}"></script>
+  <script src="{% static 'assets/js/main.js' %}"></script>
 
 </body>
 
